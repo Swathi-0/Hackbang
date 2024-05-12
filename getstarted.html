@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join as Client or Freelancer</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 100px auto;
+        text-align: center;
+    }
+    h6 {
+        margin-bottom: 20px;
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    .create-account {
+        background-color: #007bff;
+        color: #fff;
+    }
+    .log-in {
+        font-size: 14px;
+        color: #888;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h6>Join as a client or freelancer</h6>
+    <div class="buttons">
+        <button class="button client" onclick="redirectTo('client')">I’m a client, hiring for a project</button>
+        <button class="button freelancer" onclick="redirectTo('freelancer')">I’m a freelancer, looking for work</button>
+    </div>
+    <p class="log-in">Already have an account? <a href="intro.html">Log In</a></p>
+</div>
+
+<script>
+    function redirectTo(type) {
+        if (type === 'client') {
+            window.location.href = 'creatclient.html';
+        } else if (type === 'freelancer') {
+            window.location.href = 'creatfree.html';
+        }
+    }
+</script>
+
+</body>
+</html>

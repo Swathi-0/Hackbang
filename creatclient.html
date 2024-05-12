@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Account</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #666;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    select {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .checkbox-label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    input[type="checkbox"] {
+        margin-right: 10px;
+    }
+    .checkbox-text {
+        color: #666;
+    }
+    .submit-btn {
+        padding: 12px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .submit-btn:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Create Account</h2>
+    <form action="home.html">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        <label for="email">Work Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Password (8 or more characters):</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="India">India</option>
+            <!-- Add more options for other countries if needed -->
+        </select>
+        <div class="checkbox-label">
+            <input type="checkbox" id="tips" name="tips">
+            <label class="checkbox-text" for="tips">Send me emails with tips on how to find talent that fits my needs.</label>
+        </div>
+        <div class="checkbox-label">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label class="checkbox-text" for="terms">Yes, I understand and agree to the Terms of Service, including the User Agreement and Privacy Policy.</label>
+        </div>
+        <button type="submit" class="submit-btn"><a href="Homeclient.html">Create Account</a></button>
+    </form>
+</div>
+</body>
+</html>
